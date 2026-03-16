@@ -3,4 +3,4 @@ from .models import Book
 
 def home(request):
     books = Book.objects.all()
-    return render(request, 'libraryapp/home.html', {'books': books})
+    return render(request, 'home.html', {'books': books})
